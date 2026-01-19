@@ -1,0 +1,53 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: rgba(255, 255, 255, 0.584);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer
+{
+    height: 80vh;
+    width: 30vw;
+    background-color: black;
+    border-radius: 8%;
+}
+.topContainer
+{
+    height: 20vh;
+    width: 30vw;
+}
+.topContainer input
+{
+    /* height: 20vh;
+    width: 30vw; */
+    height: 80%;
+    width: 90%;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    font-size: 36px;
+    text-align: right;
+}
+.buttonRow
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 25px;  
+}
+.btnDecoration
+{
+    height:8vh;
+    width: 6vw;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10%;
+}
