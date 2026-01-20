@@ -7,6 +7,7 @@ for(let i=0;i<20;i++)
 
         if(btns[i].innerHTML==="=")
         {
+            let temp=ip.value;
             try 
             {
                 ip.value = eval(ip.value);
@@ -14,13 +15,13 @@ for(let i=0;i<20;i++)
             catch(error) 
             {
                 ip.value = error;
+                setTimeout(() => 
+                    {
+                        ip.value = temp;
+                    }, 1500);
+                
             }  
 
-            setTimeout(() => 
-                {
-                    ip.value = "";
-                }, 1500);
-            
             
         }
         else if(btns[i].innerHTML==="DEL")
